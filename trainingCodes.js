@@ -141,4 +141,14 @@ function isAllX(string) {
     return true;
 }
 // --------------------------------------
-
+function findFirstX(string) {
+    return string.indexOf('x');
+}
+// --------------------------------------
+function splitAtX(string) {
+    const findx = string.indexOf('x');
+    const a = string.slice(0,findx);
+    const b = string.slice(findx+1);
+    return (a.length > b.length) ? a : b;
+}
+// --------------------------------------
