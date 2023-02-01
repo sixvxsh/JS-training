@@ -88,4 +88,36 @@ const message = `
 `;
 
 // --------------------------------------
+function checkNumber(num) {
+    if(num > 0) {
+        return 'positive';
+    }
+    else if(num < 0) {
+        return 'negative';
+    }
+    else {
+        return 'zero';
+    }
+}
+// --------------------------------------
+function maxSum(num) {
+    let result = 0;
+    for(let i = 1; i <= num; i++) {
+        result += i;
+    }
+    return result;
+}
+// --------------------------------------
+function startsWithX(string) {
+    if(string[0].toLowerCase() == 'x') {
+        return true;
+    }
+    else if (string[0].toUpperCase() == 'X'){
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+// --------------------------------------
 
