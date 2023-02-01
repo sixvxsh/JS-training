@@ -172,3 +172,24 @@ function lessThanTen(array) {
     return true;
 }
 // --------------------------------------
+
+function hasOne(array) {
+    for (i = 0; i < array.length; i++) {
+        if (array[i] === 1) {
+            return true;
+        }
+    }
+    return false;
+}
+// --------------------------------------
+
+function sumEven(array) {
+    let sum = 0;
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] % 2 == 0) {
+            sum += array[i];
+        }
+    }
+    return sum;
+}
+// --------------------------------------
