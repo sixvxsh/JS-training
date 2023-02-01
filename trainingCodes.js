@@ -152,3 +152,23 @@ function splitAtX(string) {
     return (a.length > b.length) ? a : b;
 }
 // --------------------------------------
+function lessThanTen(array) {
+    let allLessThanTen = true;
+    for(let i = 0; i < array.length; i++) {
+        if(array[i] >= 10) {
+            allLessThanTen = false;
+            break;
+        } 
+    }
+    return allLessThanTen;
+}
+// --------------------------------------
+function lessThanTen(array) {
+    for(let i = 0; i < array.length; i++) {
+        if(array[i] >= 10) {
+            return false;
+        } 
+    }
+    return true;
+}
+// --------------------------------------
