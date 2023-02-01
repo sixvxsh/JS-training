@@ -120,4 +120,25 @@ function startsWithX(string) {
     }
 }
 // --------------------------------------
+function endsWithX(string) {
+    if (string[(string.length) - 1] == 'x') {
+        return true;
+    }
+    else if (string[(string.length) - 1] == 'X') {
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+// --------------------------------------
+function isAllX(string) {
+    for(let i = 0; i < string.length; i++) {
+        if (string[i].toLowerCase() !== "x") {
+            return false;
+        }
+    }
+    return true;
+}
+// --------------------------------------
 
