@@ -193,3 +193,25 @@ function sumEven(array) {
     return sum;
 }
 // --------------------------------------
+
+function unique(array) {
+    const myArray = [];
+    for(let i = 0; i < array.length; i++) {
+        const element = array[i];
+        if (myArray.indexOf(element) === -1) {
+            myArray.push(element);
+        }
+    }
+    return myArray;
+}
+
+// --------------------------------------
+
+function addOne(array) {
+    for(let i = 0; i < array.length; i++) {
+        array[i]++;
+    }
+}
+// --------------------------------------
+
+
