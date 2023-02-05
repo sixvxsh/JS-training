@@ -222,4 +222,30 @@ function removeOccurrences(array, num) {
 }
 // --------------------------------------
 
+const order = {
+    pizzas: 5,
+    extraCheese: true,
+    deliveryInstructions: 'Please get us soon, we are so hungry',
+};
+
+// --------------------------------------
+
+function numberOfPizzas(order) {
+    const totalpizzas = order.pizzas;
+    return totalpizzas;
+}
+
+// --------------------------------------
+
+function numberOfPizzas(orders) {
+    let total = 0;
+    for(let i = 0; i < orders.length; i++) {
+        total += orders[i].pizzas;
+    }
+    return total;
+}
+
+// --------------------------------------
+
+
 
