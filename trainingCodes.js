@@ -271,4 +271,20 @@ function numberOfPizzas(orders) {
 
 // --------------------------------------
 
+function numberOfKeys(object) {
+    for (let key in object) {
+        objkey = Object.keys(object)
+        total_keys = objkey.length
+    }
+    return total_keys;
+}
+
+// --------------------------------------
+
+function removeSecret(object) {
+    delete object.secret;
+}
+// --------------------------------------
+
+
 
