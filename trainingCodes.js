@@ -247,5 +247,14 @@ function numberOfPizzas(orders) {
 
 // --------------------------------------
 
+// UPPER_SNAKE_CASE
+
+const ORDER_TYPES = {
+    PIZZA: 0,
+    SALAD: 1,
+    BURGER: 2,
+    
+}
+// --------------------------------------
 
 
