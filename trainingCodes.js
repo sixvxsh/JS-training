@@ -326,11 +326,54 @@ function countC(str) {
 
 // --------------------------------------
 
-
+const vowels = ["a","e","i","o","u"];
+function countVowels(str) {
+    let count = 0;
+    for(let i = 0; i < str.length; i++){
+        if(vowels.includes(str[i].toLowerCase())){
+            count++;
+        }
+    }
+    return count;
+}
 
 
 // --------------------------------------
 
+// Reverse in strings is different from reverse in arrays
 
+function reverse(str) {
+    let newstr = '';
+    for ( i = str.length -1; i >= 0; i--) {
+        newstr += str[i];
+    }
+    return newstr;
+}
+
+
+// --------------------------------------
+
+function isPalindrome(str) {
+    return str === reverse(str); 
+ }
+ 
+ function reverse(str) {
+     let newstr = '';
+     for(let i = str.length -1; i >= 0; i-- ) {
+         newstr += str[i];
+     }
+     return newstr;
+ }
+
+//  --------------------------------------
+
+function sumTogether(arr1, arr2) {
+    let newarr = [];
+    for (let i = 0; i < arr1.length; i++) {
+        const sum = arr1[i] + arr2[i];
+        newarr.push(sum) 
+    }
+    return newarr;
+}
 
 // --------------------------------------
