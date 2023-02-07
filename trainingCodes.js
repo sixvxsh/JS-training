@@ -377,3 +377,38 @@ function sumTogether(arr1, arr2) {
 }
 
 // --------------------------------------
+
+
+function countElements(elements) {
+    let countelement = {};
+    for(let i = 0; i < elements.length; i++) {
+        if(!countelement[elements[i]]) {
+            countelement[elements[i]] = 1;
+        } else {
+            countelement[elements[i]] += 1;
+        }
+    }
+    return countelement;
+}
+
+
+// --------------------------------------
+
+function playerHandScore(hand) {
+    const scores = {
+        'K': 4,
+        'Q': 3,
+        'J': 2,
+    }
+    const handArray = hand.split('');
+    let sum = 0;
+
+    for (let i = 0; i < handArray.length; i++) {
+        const score = scores[handArray[i]];
+        sum += score;
+    }
+    return sum;
+
+}
+
+// --------------------------------------
