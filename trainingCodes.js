@@ -446,5 +446,25 @@ function carCrossing(aCrossing, bCrossing) {
 }
 
 // --------------------------------------
+function catchError(fn) {
+    try {
+        fn();
+    }
+    catch(ex) {
+        
+    }
+}
+// --------------------------------------
+
+function catchError(fn) {
+    try {
+        fn();
+    }
+    catch(ex) {
+        return ex;
+        
+    }
+    return false;
+}
 
 // --------------------------------------
