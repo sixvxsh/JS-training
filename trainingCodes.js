@@ -468,3 +468,42 @@ function catchError(fn) {
 }
 
 // --------------------------------------
+
+function toNumber(string) {
+    return Number(string) || 0;
+}
+
+// --------------------------------------
+
+function combineToString(a, b) {
+    return a + '' + b;
+}
+
+// --------------------------------------
+
+function isTruthy(a) {
+    if (a) {
+        return true;
+    }
+    return false;
+}
+
+// --------------------------------------
+
+function looseEquals(a, b) {
+    if (a == b) {
+        return true;
+    }
+    return false;
+}
+
+// --------------------------------------
+
+
+function toJSON(obj) {
+    result = JSON.stringify(obj);
+    return result;
+}
+
+
+// --------------------------------------
