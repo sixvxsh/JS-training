@@ -421,3 +421,30 @@ function willEat(hasPizza, hasDonuts, hasCookies) {
 }
 
 // --------------------------------------
+
+function double(x) {
+    return(x || 0) * 2;
+}
+
+// --------------------------------------
+
+function canBreathe(isConnected, hasOxygen, aboveWater) {
+    return (isConnected && hasOxygen) || aboveWater;
+}
+// --------------------------------------
+
+function friendName(friend) {
+    return friend && friend.name;
+}
+
+
+// --------------------------------------
+
+function carCrossing(aCrossing, bCrossing) {
+    return (aCrossing && !bCrossing) ||
+    (!aCrossing && bCrossing);
+}
+
+// --------------------------------------
+
+// --------------------------------------
