@@ -613,4 +613,53 @@ Shape.prototype.move = function(x,y) {
     this.position.y += y;
 }
 
+
+const Shape = require('./Shape');
+
+function Circle(x, y, radius) {
+    Shape.call(this,x,y);
+    this.radius = radius;
+}
+
+// --------------------------------------
+
+const Shape = require('./Shape');
+
+function Circle(x, y, radius) {
+    Shape.call(this,x,y);
+    this.radius = radius;
+}
+
+Circle.prototype = Object.create(Shape.prototype);
+
+// --------------------------------------
+
+const Shape = require('./Shape');
+
+function Rectangle(x, y, height, width) {
+    Shape.call(this,x,y);
+    this.height = height;
+    this.width = width;
+}
+Rectangle.prototype = Object.create(Shape.prototype);
+
+
+// --------------------------------------
+
+const Shape = require('./Shape');
+
+function Rectangle(x, y, height, width) {
+    Shape.call(this,x,y);
+    this.height = height;
+    this.width = width;
+    this.flip = function() {
+    const width = this.width;
+    this.width = this.height;
+    this.height = width;
+    }
+}
+Rectangle.prototype = Object.create(Shape.prototype);
+
+module.exports = Rectangle;
+
 // --------------------------------------
