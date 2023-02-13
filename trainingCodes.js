@@ -771,3 +771,30 @@ function sortStringsDown(array) {
 }
 
 // --------------------------------------
+
+function sortStudents(students) {
+    students.sort((a,b) => {
+        if(a.graduated && !b.graduated) {
+            return -1;
+        }
+        if(b.graduated && !a.graduated) {
+            return 1;
+        }
+        return b.grade - a.grade;
+    });
+}
+
+// --------------------------------------
+
+const MONTHS = [
+    'JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN',
+    'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC'
+];
+
+function sortByMonth(array) {
+    array.sort((a,b) => {
+        return MONTHS.indexOf(a.month) -
+        MONTHS.indexOf(b.month);
+    })
+}
+// --------------------------------------
