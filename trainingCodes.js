@@ -798,3 +798,25 @@ function sortByMonth(array) {
     })
 }
 // --------------------------------------
+
+function plusOne(arr) {
+    return arr.map(x => x+1);
+}
+
+// --------------------------------------
+
+function squareRoot(arr) {
+    return arr.map(Math.sqrt);
+}
+
+// --------------------------------------
+
+function squared(n) {
+    return n * n;
+}
+
+// --------------------------------------
+
+
+
+
