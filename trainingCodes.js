@@ -817,6 +817,14 @@ function squared(n) {
 
 // --------------------------------------
 
+const squared = require('./squared');
+
+function squaredMap(arr) {
+    return arr.map(squared);
+}
+
+// --------------------------------------
+
 
 
 
