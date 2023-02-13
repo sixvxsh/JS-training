@@ -815,8 +815,6 @@ function squared(n) {
     return n * n;
 }
 
-// --------------------------------------
-
 const squared = require('./squared');
 
 function squaredMap(arr) {
@@ -824,6 +822,31 @@ function squaredMap(arr) {
 }
 
 // --------------------------------------
+
+
+function addScore(players) {
+    return players.map((x) => {
+        x.score += 10;
+        return x;
+    })
+}
+
+// --------------------------------------
+
+function addScore(arr) {
+    return arr.map((x , i) => {
+        if ( i <= 2) {
+            x.score += 10; 
+        }
+        return x;
+    })
+}
+
+// --------------------------------------
+
+
+
+
 
 
 
