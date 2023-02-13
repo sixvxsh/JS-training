@@ -663,3 +663,41 @@ Rectangle.prototype = Object.create(Shape.prototype);
 module.exports = Rectangle;
 
 // --------------------------------------
+
+class Hero {
+    constructor() {
+        this.health = 50;
+    }
+}
+
+// --------------------------------------
+
+class Hero {
+    constructor() {
+        this.health = 50;
+    }
+    takeDamage(damage) {
+        this.health -= damage;
+    }
+}
+// --------------------------------------
+
+const Hero = require('./Hero.js');
+
+class Warrior extends Hero {
+    
+}
+
+// --------------------------------------
+
+const Hero = require('./Hero.js');
+
+class Warrior extends Hero {
+    constructor() {
+        super();
+        this.rage = 0;
+    }
+}
+
+// --------------------------------------
+
