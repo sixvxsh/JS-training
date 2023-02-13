@@ -878,6 +878,30 @@ function topStudents(array) {
     })
 }
 
+// or 
+
+function topStudents(array) {
+    return array.filter((student) => {
+        return student.grade >= 90;
+    });
+}
+
+// --------------------------------------
+
+function firstThree(array) {
+    return array.filter((el,i) => {
+        return i < 3;
+    })
+}
+
+// --------------------------------------
+
+function unique(array) {
+    return array.filter((el , i) => {
+        return array.indexOf(el) === i;
+    })
+}
+
 // --------------------------------------
 
 
