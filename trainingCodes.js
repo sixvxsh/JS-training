@@ -701,3 +701,41 @@ class Warrior extends Hero {
 
 // --------------------------------------
 
+const Hero = require('./Hero.js');
+
+class Warrior extends Hero {
+    constructor() {
+        super();
+        this.rage = 0;
+    }
+    takeDamage(damage) {
+        super.takeDamage(damage);
+        this.rage += 1;
+    }
+}
+
+// --------------------------------------
+
+class Hero {
+    constructor(health) {
+        this.health = health;
+    }
+    takeDamage(damage) {
+        this.health -= damage;
+    }
+}
+
+// --------------------------------------
+
+const Hero = require('./Hero.js');
+
+class Warrior extends Hero {
+    constructor(health) {
+        super(health);
+        this.rage = 0;
+    }
+    takeDamage(damage) {
+        super.takeDamage(damage);
+        this.rage += 1;
+    }
+}
