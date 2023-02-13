@@ -860,6 +860,25 @@ function onlyTrue(array) {
 
 // --------------------------------------
 
+function shortStrings(array) {
+    return array.filter((el) => {
+        if(el.length <= 3) {
+            return el;
+        }
+    });
+}
+
+// --------------------------------------
+
+function topStudents(array) {
+    return array.filter((el) => {
+        if(el.grade >= 90) {
+            return el.name;
+        }
+    })
+}
+
+// --------------------------------------
 
 
 
