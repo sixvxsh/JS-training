@@ -739,3 +739,27 @@ class Warrior extends Hero {
         this.rage += 1;
     }
 }
+
+function sortUp(array) {
+    array.sort(function comparison(a,b) {
+        return a-b;
+    })
+}
+
+// --------------------------------------
+
+function sortDown(array) {
+    array.sort(function comparison(a,b) {
+        return b-a;
+    })
+}
+
+// --------------------------------------
+
+function sortStringsUp(array) {
+    array.sort((a,b) => {
+        return a.localeCompare(b)
+    });
+}
+
+// --------------------------------------
