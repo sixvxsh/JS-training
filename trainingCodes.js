@@ -828,7 +828,7 @@ function addScore(players) {
     return players.map((x) => {
         x.score += 10;
         return x;
-    })
+    });
 }
 
 // --------------------------------------
@@ -839,10 +839,27 @@ function addScore(arr) {
             x.score += 10; 
         }
         return x;
-    })
+    });
 }
 
 // --------------------------------------
+
+function lessThanFive(array) {
+    return array.filter((el) => {
+        return el < 5; 
+    });
+}
+
+// --------------------------------------
+
+function onlyTrue(array) {
+    return array.filter((bool) => {
+        return bool;
+    });
+}
+
+// --------------------------------------
+
 
 
 
