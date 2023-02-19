@@ -937,7 +937,36 @@ function largest(numbers) {
 
 // --------------------------------------
 
+function factorial(n){
+    // base case for recursion fuction
+    // factorial 1
+    if(n === 1) return 1;
 
+    // factorial2
+    return n * factorial(1);
+ 
+}
+
+// --------------------------------------
+
+function factorial(n){
+    // base case for recursion fuction
+    if(n === 1) return 1;
+
+    return n * factorial(n-1);
+ 
+}
+
+
+// --------------------------------------
+
+function walk(node) {
+    if(!node.next) return node;
+
+    return walk(node.next);
+}
+
+// --------------------------------------
 
 
 
