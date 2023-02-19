@@ -1165,3 +1165,30 @@ class LinkedList{
 }
 // --------------------------------------
 
+function simpleFunction(fn) {
+    // invoke the callback function
+    fn();
+}
+
+// --------------------------------------
+
+function runCallback(callbackFunction) {
+    callbackFunction();
+}
+
+// --------------------------------------
+
+simpleFunction(function callbackFunction() {
+    console.log('hi');
+});
+
+// --------------------------------------
+
+// asynchronous
+function runCallback(callbackFunction) {
+    setTimeout(() => {
+        callbackFunction();
+    }, 1000);
+}
+
+// --------------------------------------
